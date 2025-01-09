@@ -1,7 +1,7 @@
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 
-const swaggerOptions = {
+const swaggerOptions: swaggerJSDoc.Options = {
   swaggerDefinition: {
     info: {
       title: 'API de Votação',
@@ -10,7 +10,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: `http://localhost:${process.env.PORT || 3000}/api`,
+        url: `http://localhost:${process.env.PORT || 3000}/api`, 
       },
     ],
   },
